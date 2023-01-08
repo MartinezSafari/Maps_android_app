@@ -9,6 +9,7 @@ import com.google.android.gms.maps.SupportMapFragment
 class MainActivity : AppCompatActivity(), OnMapReadyCallback
 {
     lateinit var myMap: GoogleMap
+
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
@@ -19,7 +20,8 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback
         mapFragment.getMapAsync(this)
     }
 
-    override fun onMapReady(gMap: GoogleMap) {
+    override fun onMapReady(gMap: GoogleMap)
+    {
         myMap = gMap
     }
 }
